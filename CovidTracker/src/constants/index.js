@@ -1,3 +1,4 @@
 import Colors from './Colors';
 import Dimensions from './Dimension';
-export {Colors, Dimensions};
+import Common from './Common';
+export {Colors, Dimensions, Common};

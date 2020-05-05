@@ -1,25 +1,25 @@
 import {StyleSheet} from 'react-native';
-import {Colors} from '../../constants';
+import {Colors, Dimensions} from '../../constants';
+
+const defaultHeight = 20;
 const styles = StyleSheet.create({
-  slide: {
-    flex: 1,
+  bottomView: {
+    // borderWidth: 1,
+    // borderColor: 'red',
+    // paddingHorizontal: -10,
+    // position: 'absolute',
     alignItems: 'center',
     justifyContent: 'center',
+    flex: 1,
+    overflow: 'visible',
     backgroundColor: Colors.defaultSwipeableBackgroundColor,
   },
-  image: {
-    width: 320,
-    height: 320,
-    marginVertical: 32,
-  },
-  text: {
-    color: 'rgba(255, 255, 255, 0.8)',
-    textAlign: 'center',
-  },
-  title: {
-    fontSize: 22,
-    color: 'white',
-    textAlign: 'center',
+  defaultButton: {flexDirection: 'row', paddingVertical: 4},
+  logo: {
+    alignSelf: 'center',
+    height: defaultHeight,
+    width: defaultHeight,
+    borderRadius: defaultHeight / 2,
   },
 });
 
