@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
   imageView: {
     width: Dimensions.width * 0.8,
     height: Dimensions.height * 0.5,
+    flex: 4,
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: Dimensions.height * 0.1,
@@ -20,6 +21,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   textView: {
+    flex: 2.5,
     width: Dimensions.width * 0.8,
     padding: 10,
     justifyContent: 'center',

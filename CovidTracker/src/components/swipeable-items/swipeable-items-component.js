@@ -5,7 +5,11 @@ const SwipeableItems = ({item}) => {
   return (
     <View style={[styles.slide]}>
       <View style={styles.imageView}>
-        <Image resizeMode={'center'} source={item.image} style={styles.image} />
+        <Image
+          resizeMode={'contain'}
+          source={item.image}
+          style={styles.image}
+        />
       </View>
       <View style={styles.textView}>
         <Text style={styles.title}>{item.title}</Text>
