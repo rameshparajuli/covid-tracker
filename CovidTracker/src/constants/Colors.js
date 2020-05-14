@@ -4,4 +4,5 @@ export default {
   defaultBlack: '#0f0f0f',
   defaultWhite: '#ffffff',
   defaultSwipeableBackgroundColor: '#E5E5E5',
+  placeholderColor: '#777777',
 };

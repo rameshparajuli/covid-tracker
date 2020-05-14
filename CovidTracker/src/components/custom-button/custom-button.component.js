@@ -1,5 +1,5 @@
 import React from 'react';
-import {TouchableOpacity, Text} from 'react-native';
+import {TouchableOpacity, Text, View} from 'react-native';
 
 import styles from './custom-button.styles';
 const DefaultButton = ({title, textColor, style, children, ...props}) => {
@@ -9,6 +9,10 @@ const DefaultButton = ({title, textColor, style, children, ...props}) => {
       <Text style={[styles.text, {color: textColor}]}>{title}</Text>
     </TouchableOpacity>
   );
+};
+
+export const SelectButton = ({children}) => {
+  return <View style={styles.selectButton}>{children}</View>;
 };
 
 export default DefaultButton;

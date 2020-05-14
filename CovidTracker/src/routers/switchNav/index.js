@@ -1,23 +1,30 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import {HomePage, Swipeable, LoginPage} from '../../screens';
+import SwipeableMoreItems from '../../components/swipeable-more-items/swipeable-more-items-component';
 import {createStackNavigator} from '@react-navigation/stack';
-import {NavigationContainer} from '@react-navigation/native';
+const Stack = createStackNavigator();
 
-const Stack = createStackNavigator;
-
-const isLoggedIn = true;
+const isLoggedIn = false;
 
 function SwitchNav() {
-  return isLoggedIn ? (
-    // <Stack.Screen name="Home" component={HomePage} />
-    // <Stack.Screen name="Swipable" component={Swipeable} />
-    <Swipeable />
-  ) : (
-    // <Stack.Screen name="SignIn" component={LoginPage} />
-    <View>
-      <Text>Login Page</Text>
-    </View>
+  return (
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}>
+      {isLoggedIn ? (
+        <>
+          <Stack.Screen name="Home" component={HomePage} />
+        </>
+      ) : (
+        <>
+          <Stack.Screen name="FewMore" component={SwipeableMoreItems} />
+          <Stack.Screen name="Swipable" component={Swipeable} />
+          <Stack.Screen name="SignIn" component={LoginPage} />
+        </>
+      )}
+    </Stack.Navigator>
   );
 }
 

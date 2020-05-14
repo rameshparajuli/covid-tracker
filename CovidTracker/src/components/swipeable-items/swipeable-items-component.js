@@ -13,7 +13,9 @@ const SwipeableItems = ({item}) => {
       </View>
       <View style={styles.textView}>
         <Text style={styles.title}>{item.title}</Text>
-        <Text style={styles.description}>{item.text}</Text>
+        <Text style={styles.description}>{item.text1}</Text>
+        <Text style={styles.description}>{item.text2}</Text>
+        <Text style={styles.description}>{item.text3}</Text>
       </View>
     </View>
   );
