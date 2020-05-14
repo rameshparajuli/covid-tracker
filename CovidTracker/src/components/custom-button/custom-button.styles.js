@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {Common} from '../../constants';
+import {Common, Colors} from '../../constants';
 
 const styles = StyleSheet.create({
   container: {
@@ -17,6 +17,17 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 14,
     paddingHorizontal: 10,
+  },
+  selectButton: {
+    height: Common.Select_Button_Height,
+    width: Common.Select_Button_Width,
+    paddingHorizontal: 10,
+    borderWidth: 1,
+    borderRadius: 7,
+    borderColor: 'transparent',
+    elevation: 4,
+    justifyContent: 'center',
+    backgroundColor: Colors.defaultWhite,
   },
 });
 

@@ -4,26 +4,30 @@ import {swipeable_images} from '../../assets';
 const data = [
   {
     title: 'Stay Updated',
-    text:
-      'With our app, you will be updated with the latest site report of the pandemic situation',
+    text1: 'With our app, you will be updated with ',
+    text2: 'the latest site report of the pandemic',
+    text3: 'situation',
     image: swipeable_images.stay_updated,
   },
   {
     title: 'Read Authentic NEWS',
-    text:
-      'With our app, you will be updated with the latest site report of the pandemic situation',
+    text1: 'With our app, you will be updated with ',
+    text2: 'the latest site report of the pandemic',
+    text3: 'situation',
     image: swipeable_images.read_news,
   },
   {
     title: 'Stay Alert',
-    text:
-      'With our app, you will be updated with the latest site report of the pandemic situation',
+    text1: 'With our app, you will be updated with ',
+    text2: 'the latest site report of the pandemic',
+    text3: 'situation',
     image: swipeable_images.stay_alert,
   },
   {
-    title: 'For More Details',
-    text:
-      'With our app, you will be updated with the latest site report of the pandemic situation',
+    title: 'Few More Details',
+    text1: 'With our app, you will be updated with ',
+    text2: 'the latest site report of the pandemic',
+    text3: 'situation',
     image: swipeable_images.details,
   },
 ];
